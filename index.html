@@ -1,41 +1,52 @@
-<div class="header__text-box row">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Michael Schmidt | Security Analyst</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="header__text-box">
     <div class="header__text">
-        <h1 class="heading-primary">
-        <!-- Replace the following name with your name -->
-        <span>Michael Schmidt</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Security Analyst based in St. Louis, MO.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      <h1 class="heading-primary"><span>Michael Schmidt</span></h1>
+      <p>A Security Analyst based in St. Louis, MO.</p>
+      <a href="#contact" class="btn btn--pink">Get in touch</a>
     </div>
-</div>
-<div class="work__box">
+  </header>
+
+  <section class="work__box">
     <div class="work__text">
-    <h3>Portfolio Template</h3>
-    <p>
-        A free Open Source Portfolio for anyone to use for free.
-    </p>
-    <ul class="work__list">
+      <h3>Portfolio Template</h3>
+      <p>A free Open Source Portfolio for anyone to use for free.</p>
+      <ul class="work__list">
         <li>HTML</li>
         <li>SCSS</li>
         <li>JavaScript</li>
         <li>Parcel</li>
-    </ul>
-
-    <div class="work__links">
-        <a href="#" class="link__text">
-        Visit Site <span>&rarr;</span>
-        </a> 
+      </ul>
+      <div class="work__links">
+        <a href="#" class="link__text">Visit Site <span>&rarr;</span></a>
         <a href="https://github.com/nisarhassan12/portfolio" target="_blank">
-        <img src="./images/github.svg" class="work__code" alt="GitHub">
+          <img src="/images/github.svg" class="work__code" alt="GitHub">
         </a>
-    </div>
+      </div>
     </div>
     <div class="work__image-box">
-        <img
-            src="./images/project-1.png"
-            class="work__image"
-            alt="Project 1"
-        />
+      <img src="/images/project-1.png" class="work__image" alt="Project 1" />
     </div>
-</div>
+  </section>
+
+  <section id="contact">
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formResponse"></p>
+  </section>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
