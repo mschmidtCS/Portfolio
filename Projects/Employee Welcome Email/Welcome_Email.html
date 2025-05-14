@@ -1,0 +1,138 @@
+<!--
+
+   Name     : Welcome Email.html
+   Version  : 2.1
+   Authors  : Mike Schmidt
+   Date     : 04/01/2025
+
+   -- Simplified, New and Old Outlook-compatible design --
+
+-->
+<body style="font-family: Arial, sans-serif; color: #333; line-height: 1.5; margin: 0; padding: 0; background-color: #f4f4f4;">
+  <center>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f0f0f0; padding: 0px 0;">
+      <tr>
+        <td>
+          <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f0f0f0;">
+            <tr>
+              <td align="center">
+                <table width="650" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff; border-radius:0px; overflow:hidden;">
+                  <tr style="background-color:#1e3a8a;">
+                    <td align="center" style="padding: 20px;">
+                      <img src="**LINK TO IMAGE**" alt="Walker Products Logo" width="300" style="display:block;">
+                    </td>
+                  </tr>
+                </td>
+              <td align="center" style="padding: 30px; background-color: #f9f9f9;">
+                <h1 style="font-size: 28px; color: #1e3a8a; margin: 0;">Welcome, {{UserName}}!</h1>
+                <p style="font-size: 16px; color: #333; margin: 15px 0;">We're thrilled to have you join the Walker Products team!</p>
+                <p style="margin: 0px 0; font-size: 14px;">To help you settle in smoothly, we've put together key information and resources. You should have already received your New Hire Guide, but here's a quick overview of helpful links and contacts.</p>
+              </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+              <td style="padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; background-color: #e7e7e7;">
+                <h2 style="color: #1e3a8a; font-size: 18px; margin-top: 0;">Your Information</h2>
+                <ul style="padding-left: 20px; font-size: 14px;">
+                  <li><strong>Department:</strong> {{Department}}</li>
+                  <li><strong>Supervisor:</strong> {{Manager}} - <a href="mailto:{{UserManager}}@YOURDOMAIN" style="text-decoration: underline;">{{UserManager}}@YOURDOMAIN</a></li>
+                  <li><strong>HR Contacts:</strong></li>
+                  <ul style="margin: 10px 0 0 20px; padding: 0;">
+                    {{HRList}}
+                  </ul>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-left: 20px; padding-right: 20px; background-color: #e7e7e7;">
+                <h2 style="color: #1e3a8a; font-size: 18px; margin-top: 0;">Insperity Tips</h2>
+                <p style="font-size: 14px;">Maximize your HR Portal (Insperity) experience with these tips:</p>
+                <ul style="padding-left: 20px; font-size: 14px;">
+                  <li>Use <a href="https://insperity.myisolved.com" style="text-decoration: none;">Insperity</a> to manage your personal info, benefits, and pay stubs.</li>
+                  <li>Enable Two-Factor Authentication (2FA) under Account Settings for added security.</li>
+                  <li>If you're an hourly employee, click the Clock icon in the top left of the dashboard, then select Quick Punch to clock in or out.</li>
+                  <li>Request time off by clicking Time, Time Card, then select Request Time Off on the top ribbon.</li>
+                  <li>Click <a href="**SHAREPOINT LINK**"style="text-decoration: none;">here</a> to view additional helpful documentation for Insperity.</li>
+                </ul>
+                <p style="font-size: 14px;">For Insperity help, call the HR department at **PHONE NUMBER**. This is also the HR call-in number&mdash;just press 0 when prompted and leave a voicemail.</p>
+              </td>
+              <tr>
+                <td style="padding-top: 20px; padding-left: 20px; padding-right: 20px; background-color: #e7e7e7;">
+                  <h2 style="color: #1e3a8a; font-size: 18px; margin-bottom: 5;">Tech Tips</h2>
+                  <p style="font-size: 14px;">Help keep our organization safe:</p>
+                  <ul style="padding-left: 20px; font-size: 14px; margin-bottom: 5px">
+                    <li>NEVER share your password or leave it visible at your workstation.  No one&ndash;whether internal or external&ndash;should ever request your password.</li>
+                    <li>NEVER leave your workstation unlocked and unattended. Please lock your screen (Win + L) when you step away from your computer.</li>
+                    <li>Be cautious when interacting with external emails. All external emails will have an orange warning banner&mdash;ensure the sender is safe before clicking links or attachments.</li>
+                    <li>Laptop users can access our internal network while offsite by following our <a href="**SHAREPOINT LINK**" style="text-decoration: none;">VPN Guide</a>.</li>
+                  </ul>
+                  <p style="font-size: 14px">Our IT Department hours are **OFFICE HOURS** and their office is located in **LOCATION**. Contact them by calling **PHONE NUMBER**.</p>                                 
+                </td>
+              </tr>
+            </tr>
+              <td style="padding: 0 0px 0px 0px;">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="56%" valign="top" style="padding-left: 10px ;padding-right: 0px; background-color: #e7e7e7">
+                      <table width="100%" cellpadding="10" cellspacing="0">
+                        <tr>
+                          <td>
+                            <h2 style="color: #1e3a8a; font-size: 18px; margin-top: 0;">Tools & Resources</h2>
+                            <p style="font-size: 14px; margin-bottom: 10px;">We utilize the following tools to collaborate and stay organized:</p>
+                            <table width="100%" cellpadding="5" style="font-size: 14px;">
+                              <tr>
+                                <td width="15%" align="center"><img src="https://images.freeimages.com/fic/images/icons/2795/office_2013_hd/2000/outlook.png" width="30" height="30" alt="Outlook"></td>
+                                <td><strong>Email & Calendar:</strong> <a href="https://support.microsoft.com/en-us/office/quick-start-add-an-email-account-to-outlook-e9da47c4-9b89-4b49-b945-a204aeea6726?wt.mc_id=otc_outlook" style="text-decoration: none;">Outlook Training Guide</a></td>
+                              </tr>
+                              <tr>
+                                <td width="15%" align="center"><img src="https://cdn0.iconfinder.com/data/icons/logos-microsoft-office-365/128/Microsoft_Office-10-512.png" width="30" height="30" alt="Teams"></td>
+                                <td><strong>Collaboration:</strong> <a href="https://support.microsoft.com/en-us/office/video-what-is-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d" style="text-decoration: none;">Teams Training Guide</a></td>
+                              </tr>
+                              <tr>
+                                <td width="15%" align="center"><img src="https://download.logo.wine/logo/OneDrive/OneDrive-Logo.wine.png" width="30" height="30" alt="OneDrive"></td>
+                                <td><strong>File Storage & Sharing:</strong> <a href="**SHAREPOINT LINK**" style="text-decoration: none;">OneDrive & SharePoint</a></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td width="34%" valign="top" style="padding-left: 10px; background-color: #e7e7e7"">
+                      <table width="100%" cellpadding="10" cellspacing="0">
+                        <tr>
+                          <td>
+                            <h2 style="color: #1e3a8a; font-size: 18px">Helpful Links</h2>
+                            <ul style="padding-left: 20px; font-size: 14px; padding-bottom: 20px">
+                              <li><a href="**WEBSITE LINK**" style="text-decoration: none; margin-bottom: 25px;">Walker Products Website</a></li>
+                              <li><a href="**WEBSITE LINK**" style="text-decoration: none;">Walker Products Intranet</a></li>
+                              <li><a href="**WEBSITE LINK**" style="text-decoration: none;">Walker Part Image Lookup</a></li>
+                              <li><a href="**WEBSITE LINK**" style="text-decoration: none;">IT Support Ticket System</a></li>
+                              <li><a href="**WEBSITE LINK**" style="text-decoration: none;">General Tech Tips</a></li>
+                              <li><a href="**WEBSITE LINK**" style="text-decoration: none;">Helpful Documents from HR</a></li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td> 
+            </tr>
+              <td align="center" style="background-color:#1e3a8a;">
+                <p style="font-family: Arial, sans-serif; color:#f0f0f0; font-size:12px; margin-top: 10px; margin-right: 50px; margin-left: 50px;">
+                  This email was sent to you by Walker Products IT Department. If you have questions, contact your supervisor or the HR Team.
+                </p>
+                <p style="font-family: Arial, sans-serif; color:#f0f0f0; font-size:11px"><i>
+                  &copy; 2025 | Walker Products. All Rights Reserved.
+                </i></p>
+                <p style="font-family: Arial, sans-serif; color:#f0f0f0; font-size:11px; margin-bottom:5px;">
+                  **ADDRESS**
+                </p>
+              </td>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
