@@ -48,7 +48,7 @@ Feel free to open issues or reach out:
 
 ---
 
-⚠️ Disclaimer
+⚠️ Disclaimer:
 All tools and scripts are intended for educational and ethical use only. Do not use them on systems you do not own or have explicit permission to test.
 
 ---
