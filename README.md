@@ -6,7 +6,7 @@ Welcome to my Cybersecurity & IT Security portfolio. This repository serves as a
 
 👨‍💻 About Me
 
-Hi, I'm Mike Schmidt, a passionate cybersecurity professional focused on protecting digital infrastructure and identifying vulnerabilities before adversaries do. My work includes:
+Hi, I'm Mike Schmidt, a passionate cybersecurity professional focused on protecting digital infrastructure and identifying vulnerabilities before adversaries do. My work includes: 
 
 - 🔍 Threat analysis & malware detection  
 - 🛠️ Security automation & tooling  
