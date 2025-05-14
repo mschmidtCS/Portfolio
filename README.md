@@ -15,9 +15,9 @@ Hi, I'm Mike Schmidt, a passionate cybersecurity professional focused on protect
 - 🧰 Virtual Machines, Windows Server, Linux
 
 Currently working as a Security Analyst at Walker Products
-Certifications: ISC2 CC - Certified in Cybersecurity
+- Certifications: ISC2 CC - Certified in Cybersecurity
 
-- 📫 Contact: mjschmidtt@gmail.com
+- Contact: mjschmidtt@gmail.com
 
 ---
 
