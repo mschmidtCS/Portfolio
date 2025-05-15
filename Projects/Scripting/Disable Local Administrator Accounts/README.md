@@ -5,7 +5,7 @@ This PowerShell script is designed to enhance endpoint security by disabling all
 ## 🛡️ Purpose
 
 To reduce attack surface and enforce standard administrative access policies across workstations and servers by:
-- Disabling all built-in and legacy local administrator accounts
+- Disabling built-in and legacy local administrator accounts
 - Creating a single, managed local admin account that adheres to company security standards
 
 ## 🔧 Features
