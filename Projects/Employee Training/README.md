@@ -19,7 +19,7 @@ To reduce the likelihood of security breaches by:
 - Configurable templates (custom branding & language)
 - Landing pages with educational messaging after click
 
-![image](https://github.com/user-attachments/assets/b55a2844-c357-44b8-be09-3d4ca22cdb2b)
+![image](https://github.com/user-attachments/assets/e9e93de9-2bb5-4d44-8b20-7416720e079a)
 
 
 ### 📚 Training Campaigns
@@ -28,9 +28,12 @@ To reduce the likelihood of security breaches by:
   - Password hygiene
   - Social engineering
   - Ransomware and data breaches
-- Monthly training modules
+- Quarterly training modules
 - Auto-enrollment for new hires
 - Progress tracking and quiz completion records
+
+![image](https://github.com/user-attachments/assets/4a63c6f5-eaeb-4801-8f7c-872288718a67)
+
 
 ### 📈 Reporting & Monitoring
 - Dashboard view of:
@@ -41,16 +44,21 @@ To reduce the likelihood of security breaches by:
 - Executive-level reports delivered monthly
 - Risk scoring per user and department
 
+I have automated reportes coming from Bullphish that are then imported into a PowerBI dashboard for better reporting and viewaility for the management team.
+
+![image](https://github.com/user-attachments/assets/a0418700-420e-4751-9008-27297d79605e)
+
+
 ## 🛠️ How It Works
 
 1. **User Sync & Grouping**  
-   Users are imported and grouped by department or role using Active Directory or CSV sync.
+   Users are imported using Active Directory groups.
 
 2. **Phishing Campaigns**  
    Simulations are scheduled at regular intervals with randomized delivery windows to mimic real-world patterns.
 
 3. **Training Delivery**  
-   Users receive training via email with links to BullPhish-hosted videos and quizzes.
+   Users receive training via email with links to BullPhish-hosted videos and quizzes on a quarterly basis.
 
 4. **Feedback & Logging**  
    Users who fall for a simulation are directed to a landing page with guidance. All actions are logged.
@@ -66,7 +74,6 @@ To reduce the likelihood of security breaches by:
 
 ## ✅ Best Practices
 
-- Avoid sending simulations during company-wide announcements or downtime.
 - Randomize templates and send times.
 - Reinforce simulations with manager follow-up.
 - Rotate training topics regularly.
