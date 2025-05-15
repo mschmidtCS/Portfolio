@@ -19,6 +19,9 @@ To reduce the likelihood of security breaches by:
 - Configurable templates (custom branding & language)
 - Landing pages with educational messaging after click
 
+![image](https://github.com/user-attachments/assets/b55a2844-c357-44b8-be09-3d4ca22cdb2b)
+
+
 ### 📚 Training Campaigns
 - Curated content library on:
   - Phishing
