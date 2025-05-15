@@ -9,13 +9,14 @@ The system includes two components:
 - `Welcome_Email.ps1` – A PowerShell script that:
   - Searches Active Directory for newly created accounts.
   - Retrieves user and manager details.
+  - Retrieves Human Resource contacts based on Active Directory group assignment.
   - Sends a personalized welcome email using a pre-defined HTML template.
 
 - `Welcome_Email.html` – An HTML file used as the template for the welcome message.
 
 ## 🔧 Features
 
-- Detects new AD user accounts (based on creation timestamp or criteria).
+- Detects new AD user accounts (based on date of creation of the user account).
 - Builds a customized welcome email using user attributes.
 - Sends email to:
   - The new employee
@@ -24,7 +25,6 @@ The system includes two components:
   - Welcome message
   - Important onboarding links
   - Company resources
-- Logs all emails sent for auditing purposes.
 
 ## 🖥️ Usage
 
@@ -33,6 +33,8 @@ Run the PowerShell script manually or on a schedule (e.g., via Task Scheduler):
 ```powershell
 .\Welcome_Email.ps1
 ```
+
+I have the .ps1 and .html files stored on a VM that is used for automation. This server has a scheduled task in place to run every morning at 6am whether there was a newly created user or not.
 
 The script:
 1. Scans Active Directory for users created within a configurable timeframe.
@@ -51,19 +53,6 @@ The `Welcome_Email.html` file should include placeholders such as:
 ```
 
 These are dynamically replaced using PowerShell before sending the email.
-
-## 📁 Logging
-
-Logs are saved to:
-
-```
-C:\Scripts\WelcomeLogs\welcome-yyyyMMdd-HHmmss.log
-```
-
-Each log entry includes:
-- Timestamp
-- User and manager email addresses
-- Email delivery status
 
 ## ✅ Requirements
 
