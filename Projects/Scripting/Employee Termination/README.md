@@ -14,7 +14,7 @@ Upon execution, the script performs the following actions for a specified user:
    - Department
    - Manager
    - Direct Reports  
-   *(Clearing these attributes triggers removal from Dynamic Groups during the next AD Connect sync cycle.)*
+   *(Clearing these attributes triggers removal from some Dynamic Groups during the next AD Connect sync cycle.)*
 3. **Appends the disable date to the user's AD Description field**
 4. **Removes the user from all Active Directory groups**
 5. **Removes all assigned Microsoft 365 licenses**
@@ -29,7 +29,7 @@ Upon execution, the script performs the following actions for a specified user:
 > 💡 Run the script with elevated privileges on a machine with RSAT tools, Exchange Online, and MSOnline/Graph modules installed.
 
 ```powershell
-.\Terminate-Employee.ps1
+.\Employee_Termination.ps1
 ```
 
 The script will prompt you for the username (SAMAccountName or UPN) and confirm before making changes.
@@ -43,7 +43,6 @@ C:\Scripts\TerminationLogs\username-yyyyMMdd-HHmmss.log
 ```
 
 Logs include:
-- Pre-removal attributes
 - Groups and licenses removed
 - Errors (if any)
 
