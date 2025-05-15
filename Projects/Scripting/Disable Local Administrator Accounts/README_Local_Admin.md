@@ -17,38 +17,21 @@ To reduce attack surface and enforce standard administrative access policies acr
   - Custom username (defined in script or passed as parameter)
   - Secure password (from a vault, encrypted file, or script input)
   - Added to the local Administrators group
-- Optional logging for audit tracking
 
 ## 🖥️ Usage
 
-Run the script as **Local System** or with **elevated privileges** on each target device:
-
-```powershell
-.\Configure-LocalAdmin.ps1 -Username "ManagedAdmin" -Password "YourSecurePassword123!"
-```
+I have the script ran via a Workflow from our RMM (Kaseya VSA X). This workflow is set to run once a week to ensure complete coverage. 
 
 ### Optional Parameters:
 - `-Username` — Desired username for the new local admin account
 - `-Password` — Password to assign to the new account (consider using a secure string or vault)
-
-## 📁 Logging
-
-Logs are created in:
-
-```
-C:\Scripts\AdminHardeningLogs\admin-config-yyyyMMdd-HHmmss.log
-```
-
-Each log entry includes:
-- Disabled accounts
-- Created account details (excluding password)
-- Time and hostname
 
 ## ✅ Requirements
 
 - PowerShell 5.1+
 - Administrative privileges on the endpoint
 - Script must not be blocked by antivirus or local policy
+- RMM workflow capabilities
 
 ## ⚠️ Warnings
 
