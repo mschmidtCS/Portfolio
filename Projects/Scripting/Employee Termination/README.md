@@ -1,41 +1,68 @@
-🛑 Employee Termination Script
+# Employee Termination Automation Script
 
-This powershell script automates the offboarding process for terminated employees, helping IT and security teams efficiently disable access and ensure proper cleanup of user accounts and resources.
+This interactive PowerShell script is designed to automate the offboarding process for terminated employees in Active Directory and Microsoft 365 environments.
 
----
+## 🔧 Features
 
-📌 Purpose
+Upon execution, the script performs the following actions for a specified user:
 
-Designed to streamline and standardize the employee termination process by:
-- Disabling user accounts
-- Revoking access to systems and applications
-- Logging actions for auditing purposes
+1. **Disables the user's AD account**
+2. **Clears sensitive AD attributes:**
+   - City
+   - State
+   - Job Title
+   - Department
+   - Manager
+   - Direct Reports  
+   *(Clearing these attributes triggers removal from Dynamic Groups during the next AD Connect sync cycle.)*
+3. **Appends the disable date to the user's AD Description field**
+4. **Removes the user from all Active Directory groups**
+5. **Removes all assigned Microsoft 365 licenses**
+6. **Removes the user from all Distribution Lists**
+7. **Removes the user from all Microsoft 365 and security groups**
+8. **Revokes access to Shared Mailboxes**
+9. **Logs all actions taken**  
+   *(Logs include timestamps, actions performed, and what objects/permissions were removed.)*
 
----
+## 🖥️ Usage
 
-⚙️ Features
+> 💡 Run the script with elevated privileges on a machine with RSAT tools, Exchange Online, and MSOnline/Graph modules installed.
 
-- ✅ Disable Active Directory and cloud accounts
-- ✅ Remove City, State, Job Title and Department attributes from their AD account 
-- ✅ Remove direct reports and manager from AD account
-- ✅ Send user to our "Pending Deletion" AD OU and update their user descrition to the date they were terminated.
-- ✅ Remove user from all Distribution Lists they are a member of
-- ✅ Remove user from all M365, Security, and AD groups they are a member of
-- ✅ Remove user from all Shared Mailboxes they have permissions on 
-- ✅ Remove user from application licensing.
-- ✅ Generate log/report of all actions taken
-- ✅ See additional features in the 
+```powershell
+.\Terminate-Employee.ps1
+```
 
----
+The script will prompt you for the username (SAMAccountName or UPN) and confirm before making changes.
 
-🛠️ Technologies Used
+## 📁 Logging
 
-- Script Language: PowerShell
-- Integrations: [Active Directory, Azure AD, Microsoft 365, Exchange Online]
-- Logging: Writes to a log file located on a network file server
+A detailed log file is generated for each terminated user and saved to:
 
----
+```
+C:\Scripts\TerminationLogs\username-yyyyMMdd-HHmmss.log
+```
 
-📥 How to Use
+Logs include:
+- Pre-removal attributes
+- Groups and licenses removed
+- Errors (if any)
 
-1. **Clone or copy the Script file
+## ✅ Requirements
+
+- PowerShell 5.1+
+- Active Directory Module
+- MSOnline and/or Microsoft Graph PowerShell SDK
+- Exchange Online PowerShell Module
+- Appropriate admin privileges
+
+## ⚠️ Warnings
+
+- This script **modifies user accounts permanently**.
+- Always run this script in a **test environment first** before deploying to production.
+- It is highly recommended to **back up user attributes and group memberships** before deletion.
+
+## 📌 Future Enhancements
+
+- GUI version with checkbox options
+- Integration with ticketing systems
+- Optional email notification to HR/Manager
