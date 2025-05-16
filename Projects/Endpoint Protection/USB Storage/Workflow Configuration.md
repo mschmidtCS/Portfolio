@@ -1,7 +1,8 @@
-The following is a screenshot of the workflow setup to run teh USB_Storage_Block.ps1 on our managed Windows devices. 
+The following is a screenshot of the workflow setup to run one of the two .ps1 scripts on our managed Windows devices. 
 
 ---
 
+![image](https://github.com/user-attachments/assets/10a367ba-c1d7-4f46-bd08-d804180047c4)
 
   
 ---
