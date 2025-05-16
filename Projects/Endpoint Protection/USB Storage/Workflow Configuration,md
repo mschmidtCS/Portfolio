@@ -6,7 +6,7 @@ The following is a screenshot of the workflow setup to run teh USB_Storage_Block
   
 ---
 
-Configuration
+## Configuration
   
   - This script is scheduled to run on a weekly basis to ensure complete coverage
   - The script first looks at the system tags we have assigned in VSA X. 
