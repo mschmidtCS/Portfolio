@@ -64,13 +64,6 @@ The implementation of Datto AV/EDR has:
 - Deploy endpoint isolation on high-severity events
 - Enforce endpoint compliance reports quarterly
 
-## 📂 Files and Documentation
-
-This repository may include:
-- Scripts used for deployment and checks
-- Screenshots of dashboards for reference
-- Standard Operating Procedures (SOPs)
-
 ---
 
 **Maintainer**: *Mike Schmidt*  
